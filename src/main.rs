@@ -1,7 +1,6 @@
 mod io;
+mod game;
 
 fn main() {
-    let side = io::ask("Black (b) or white (w)?", &["b", "w"]);
-
-    println!("You have choosen {:?} side", side);
+    game::run_game();
 }
